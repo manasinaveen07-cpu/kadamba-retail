@@ -1,0 +1,19 @@
+{
+  "name": "stitch-kadamba-group-retail-redesign",
+  "version": "1.0.0",
+  "description": "Kadamba Group Retail Enterprise - Sirsi, Karnataka",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "node build.js"
+  },
+  "keywords": [
+    "kadamba",
+    "retail",
+    "supermarket",
+    "cooperative",
+    "sirsi"
+  ],
+  "author": "Kadamba Group",
+  "license": "ISC"
+}

@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><title>Kadamba Supermart | 11,000+ Groceries & Spices</title><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed":"#ffdbcf","surface-container-highest":"#f8ddcc","on-tertiary-fixed":"#241a00","tertiary-fixed-dim":"#eec13e","on-primary-fixed-variant":"#812900","on-surface":"#26190e","background":"#fff8f5","surface-container-high":"#fee3d2","tertiary-container":"#cfa621","outline":"#8c7168","secondary-container":"#adf28a","on-secondary-container":"#337018","on-error-container":"#93000a","surface-container":"#ffeadd","inverse-surface":"#3d2d22","on-tertiary-container":"#4f3d00","surface-container-low":"#fff1e9","on-background":"#26190e","primary":"#a93800","error-container":"#ffdad6","on-primary-fixed":"#380d00","on-tertiary":"#ffffff","primary-container":"#f36b35","surface-bright":"#fff8f5","on-primary":"#ffffff","surface-variant":"#f8ddcc","secondary-fixed-dim":"#95d874","secondary":"#2f6b13","tertiary-fixed":"#ffdf90","surface-container-lowest":"#ffffff","on-secondary-fixed-variant":"#1a5200","outline-variant":"#e0c0b5","surface-tint":"#a93800","inverse-primary":"#ffb59b","on-tertiary-fixed-variant":"#584400","secondary-fixed":"#b0f58d","inverse-on-surface":"#ffede3","on-primary-container":"#561800","primary-fixed-dim":"#ffb59b","error":"#ba1a1a","on-surface-variant":"#58413a","on-secondary-fixed":"#062100","tertiary":"#755b00","on-error":"#ffffff","surface":"#fff8f5","surface-dim":"#f0d5c4","on-secondary":"#ffffff"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-md":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","margin":"1rem","space-xl":"2.5rem","gutter-desktop":"1.5rem","margin-desktop":"3rem","margin-tablet":"2rem","gutter":"1rem","space-xs":"0.25rem"},fontFamily:{"label-sm":["Plus Jakarta Sans"],"headline-md":["Outfit"],"headline-lg":["Outfit"],"price-hero":["Outfit"],"display-lg-mobile":["Outfit"],"body-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Outfit"],"display-lg":["Outfit"],"label-md":["Plus Jakarta Sans"],"display-md-mobile":["Outfit"],"display-md":["Outfit"],"price-strikethrough":["Plus Jakarta Sans"]},fontSize:{"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.04em","fontWeight":"800"}],"headline-md":["22px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["28px",{"lineHeight":"36px","fontWeight":"700"}],"price-hero":["24px",{"lineHeight":"28px","fontWeight":"800"}],"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"800"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"700"}],"display-md-mobile":["26px",{"lineHeight":"32px","letterSpacing":"0em","fontWeight":"700"}],"display-md":["36px",{"lineHeight":"44px","letterSpacing":"-0.01em","fontWeight":"700"}],"price-strikethrough":["14px",{"lineHeight":"18px","fontWeight":"500"}]}}}}</script>
+  <!-- Three.js & Kadamba 3D Interactive Engine -->
+  <link rel="stylesheet" href="assets/css/kadamba-3d.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="assets/js/kadamba-3d.js" defer></script>
+
+</head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(73,56,44,0.06)]"><div class="bg-surface-container-high"><div class="max-w-[1360px] mx-auto px-margin-desktop h-10 flex items-center justify-between font-label-md text-label-md text-on-surface-variant"><div class="flex items-center gap-space-lg"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[16px]">location_on</span><span>Sirsi, Karnataka • Santhe Hub Delivery</span></span><span class="hidden lg:inline text-outline-variant">|</span><span class="hidden lg:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">schedule</span><span>Daily 8:00 AM – 9:30 PM</span></span><span class="hidden xl:inline text-outline-variant">|</span><span class="hidden xl:flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px]">call</span><span>Helpline: 08384 - 222333</span></span></div><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-xs text-primary hover:text-on-primary-container transition-colors" data-path="financial-services" href="financial-services.html"><span class="material-symbols-outlined text-[15px]">verified_user</span><span>Member Co-op Portal</span></a><span class="text-outline-variant">|</span><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary text-[15px]">eco</span><span class="text-secondary font-label-sm text-label-sm uppercase tracking-wider">Malnad Certified</span></div></div></div></div><div class="max-w-[1360px] mx-auto px-margin-desktop h-20 flex items-center justify-between gap-space-lg"><a class="flex items-center gap-space-sm shrink-0" data-path="home" href="index.html"><div class="w-11 h-11 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[26px]">storefront</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-lg text-headline-lg text-primary tracking-tight leading-none">KADAMBA</span><span class="px-space-xs py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Estd. Sirsi</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Retail Enterprise</span></div></a><div class="hidden md:flex flex-1 max-w-xl items-center relative"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px]">search</span><input class="w-full pl-11 pr-space-lg py-2.5 rounded-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-[0_2px_8px_-2px_rgba(73,56,44,0.08)] focus:outline-none focus:ring-2 focus:ring-primary-container placeholder:text-on-surface-variant/70" placeholder="Search 11,000+ groceries, Malenadu spices, daily essentials..." type="text"/></div><div class="flex items-center gap-space-md"><a class="hidden xl:flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors font-label-md text-label-md" data-path="stores" href="stores.html"><span class="material-symbols-outlined text-primary text-[18px]">store</span><span>Store Locator</span></a><a class="hidden sm:flex items-center gap-space-xs px-space-md py-2 rounded-full bg-secondary text-on-secondary hover:bg-on-secondary-container transition-all shadow-[0_2px_8px_-2px_rgba(73,56,44,0.08)] font-label-md text-label-md" href="https://wa.me/918384222333" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span>Santhe Quick Order</span></a><a class="flex items-center gap-space-xs px-space-md py-2 rounded-full bg-surface-container-high hover:bg-surface-container-highest transition-colors relative text-on-surface" data-path="supermart" href="supermart.html"><span class="material-symbols-outlined text-[20px] text-primary">shopping_basket</span><span class="font-label-lg text-label-lg hidden sm:inline">Basket</span><span class="w-5 h-5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center justify-center">3</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div><div class="bg-surface-container-lowest shadow-[0_1px_4px_rgba(73,56,44,0.04)]"><div class="max-w-[1360px] mx-auto px-margin-desktop h-12 flex items-center"><nav class="flex items-center gap-space-sm overflow-x-auto py-1" data-active-classes="bg-surface-container-high text-primary font-bold rounded-lg"><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md shrink-0" data-path="home" href="index.html">Home</a><a aria-current="page" class="px-space-md py-1.5 transition-colors shrink-0 flex items-center gap-space-xs bg-surface-container-high text-primary font-bold rounded-lg" data-path="supermart" href="supermart.html"><span>Supermart</span><span class="px-1.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm leading-none">11k+ Items</span></a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md shrink-0" data-path="financial-services" href="financial-services.html">Financial Services</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md shrink-0" data-path="suppliers" href="suppliers.html">Suppliers</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md shrink-0" data-path="stores" href="stores.html">Stores</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md shrink-0" data-path="about-us" href="about-us.html">About Us</a><a class="px-space-md py-1.5 text-on-surface-variant hover:text-on-surface transition-colors font-label-md text-label-md shrink-0" data-path="privacy-policy" href="privacy-policy.html">Privacy Policy</a></nav></div></div></header><main class="w-full pt-44 bg-surface"><div class="max-w-[1360px] mx-auto px-margin-desktop py-space-xl"><div class="flex flex-col w-full">
+<!-- Top Santhe Savings Live Ticker -->
+<div class="w-full bg-primary text-on-primary py-2 px-space-md rounded-xl mb-space-lg flex items-center justify-between shadow-sm overflow-hidden relative">
+<div class="flex items-center gap-space-sm shrink-0">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">bolt</span> Flash Deal
+      </span>
+<span class="font-label-md text-label-md tracking-wide">Santhe Bachat Live:</span>
+</div>
+<div class="flex-1 mx-space-md overflow-hidden whitespace-nowrap">
+<div class="inline-block animate-pulse font-body-sm text-body-sm text-primary-fixed">
+        • 5% to 30% OFF on pantry staples, pure Malenadu cold-pressed oils &amp; packaged foods • Free same-day doorstep drops across Sirsi on orders over ₹500 • Daily farm arrivals straight from APMC Sirsi Yard • Member co-op dividend points apply on all 11,000+ items
+      </div>
+</div>
+<div class="hidden md:flex items-center gap-2 text-on-primary/90 font-label-sm text-label-sm shrink-0">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>FSSAI &amp; Agmark Certified Hub</span>
+</div>
+</div>
+<!-- Section 1: Supermart Hero & Command Filter Console -->
+<section class="relative w-full rounded-2xl overflow-hidden bg-surface-container-high shadow-md mb-space-xl">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center brightness-[0.4] saturate-[1.2]" data-alt="Expansive modern Indian supermarket interior filled with wooden fruit stalls, well-lit pristine wide aisles, neatly organized spice jars, and warm ambient hanging lamps in earthy terracotta tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDr46TnCKl9vWUH1vsonqulWpidtsaftI0QNDagc4cKdr7BRE2NUqdjJh52ZQOhxOe58Vsdl7kD1i8RcUzW8YrWsOd4b3FuEKKwO4rgqPMeP7GNKlInv1_sC_64xK2hzqmTZSjNt3ADrUIiPG_w7291C1wgTtY9SX05EYlCgV1KIH2QFAAMGdTuyZOqpfgNzjcvFWv9WpKP09ZQlWsZQtDaA03cHy8ioIEwVSvxb9Ld')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-inverse-surface/95 via-inverse-surface/80 to-transparent"></div>
+</div>
+<div class="relative z-10 px-space-xl py-space-xl lg:py-16 max-w-4xl flex flex-col gap-space-md text-on-tertiary">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-space-md py-1 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm uppercase tracking-widest flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+          Sirsi's Largest Co-Op Supermart
+        </span>
+<span class="px-space-md py-1 rounded-full bg-surface-container-highest/20 backdrop-blur-md text-surface-container-lowest font-label-sm text-label-sm tracking-wide">
+          8,000 Sq. Ft. Air-Conditioned Floor
+        </span>
+</div>
+<h1 class="font-display-lg text-display-lg text-surface-container-lowest tracking-tight leading-tight">
+        Kadamba Supermart — <span class="text-tertiary-fixed">11,000+ Products</span> Under One Roof
+      </h1>
+<p class="font-body-lg text-body-lg text-surface-container max-w-2xl">
+        Experience seamless retail blending modern aisle convenience with ancestral Malenadu authenticity. Daily fresh harvest from local agriculturists, heritage farm provisions, and branded household daily goods.
+      </p>
+<!-- Integrated Search & Filter Controls -->
+<div class="mt-space-sm w-full max-w-3xl flex flex-col gap-space-sm">
+<div class="flex flex-col sm:flex-row gap-space-xs bg-surface-container-lowest p-1.5 rounded-2xl shadow-lg">
+<div class="flex-1 flex items-center px-space-md gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">search</span>
+<input class="w-full bg-transparent py-2.5 text-on-surface font-body-md text-body-md focus:outline-none placeholder:text-on-surface-variant/70" id="product-search-input" placeholder="Search by crop, brand, ghee, or grocery SKU..." type="text"/>
+</div>
+<button class="px-space-lg py-3 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-all shadow-sm flex items-center justify-center gap-2" type="button">
+<span>Explore Aisle</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+<!-- Filter Categories Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto py-1 no-scrollbar">
+<button class="cat-pill active shrink-0 px-space-md py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md transition-all shadow-sm" data-category="all">
+            All Departments
+          </button>
+<button class="cat-pill shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface font-label-md text-label-md transition-all shadow-sm" data-category="fresh">
+            Fresh Groceries &amp; Veggies
+          </button>
+<button class="cat-pill shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface font-label-md text-label-md transition-all shadow-sm" data-category="spices">
+            Malenadu Spices &amp; Areca
+          </button>
+<button class="cat-pill shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface font-label-md text-label-md transition-all shadow-sm" data-category="dairy">
+            Dairy &amp; Ghee
+          </button>
+<button class="cat-pill shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface font-label-md text-label-md transition-all shadow-sm" data-category="wellness">
+            Ayurvedic &amp; Wellness
+          </button>
+<button class="cat-pill shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface font-label-md text-label-md transition-all shadow-sm" data-category="essentials">
+            Household Essentials
+          </button>
+<button class="cat-pill shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface font-label-md text-label-md transition-all shadow-sm" data-category="snacks">
+            Snacks &amp; Beverages
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Featured Malenadu Shelf (Local Heritage Groceries) -->
+<section class="flex flex-col gap-space-lg mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px]">local_florist</span>
+<span>Malenadu Cooperative Heritage Selection</span>
+</div>
+<h2 class="font-display-md text-display-md text-on-surface tracking-tight">Featured Malenadu Shelf</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Procured directly from Uttara Kannada agrarian families and certified organic cultivators.</p>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-md text-label-md text-on-surface-variant">Showing 8 priority member staples</span>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-md text-label-md transition-colors flex items-center gap-1" id="view-all-btn">
+<span>Full 11k Inventory</span>
+<span class="material-symbols-outlined text-[16px]">tune</span>
+</button>
+</div>
+</div>
+<!-- 8 Elevated Product Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg" id="product-grid">
+<!-- Product 1 -->
+<div class="group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-2xl transition-all duration-300 relative overflow-hidden card-3d" data-tilt-3d>
+<div class="absolute top-3 left-3 z-10">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase shadow-sm">
+            19% OFF
+          </span>
+</div>
+<div class="absolute top-3 right-3 z-10">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors shadow-sm" title="Add to Wishlist">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Traditional solid blocks of golden organic Sirsi jaggery wrapped in natural banana fibre string resting over rustic clay platform." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBOeka6YC8BGUfy1pHOVMiPr2FmUIUSwyciqIDZecmkQUaNx96cmLbobfUwErZqbhLbgQkWdEzwMLcT4VLroHT_d0k7oDm5V0u38U3JBZ5o6u0wZR0ISpp6EpEUTCrK_DjClHass4N0jtYt3KbJYgpAflwR3jGJVztLhW5Yk3jX0EvT5rFXGRNg70jzXlPxkaX7egS3oQl6x9A9ARvYSvGI4oemLt8Lm5NPzeZVgFSL')"></div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified</span> Sirsi Origin
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Pantry • 1 kg Block</span>
+<div class="flex items-center justify-between gap-1">
+      <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Farm Fresh Organic Jaggery</h3>
+      <button data-open-3d="jaggery" class="btn-3d-view text-xs px-2 py-0.5 rounded-full font-bold flex items-center gap-0.5 shrink-0" title="Inspect 360° 3D Model">
+        <span class="material-symbols-outlined text-[13px]">3d_rotation</span> 3D
+      </button>
+    </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Authentic chemical-free Sirsi bella, mineral-dense, slow-boiled in open copper pans.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹105</span>
+<div class="flex items-baseline gap-1">
+<span class="font-price-hero text-price-hero text-primary font-bold">₹85</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Save ₹20</span>
+</div>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md flex items-center gap-1 transition-all shadow-sm active:scale-95" onclick="triggerCartToast('Farm Fresh Organic Jaggery (1kg)')">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-2xl transition-all duration-300 relative overflow-hidden card-3d" data-tilt-3d>
+<div class="absolute top-3 left-3 z-10">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm uppercase shadow-sm">
+            14% OFF
+          </span>
+</div>
+<div class="absolute top-3 right-3 z-10">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Vibrant dried wrinkled deep red Byadgi chillies piled high inside traditional woven cane basket with scattered Malnad whole spices." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAKhiGUcPBsQy8IExiD3llVnyXnvIoGY8bwCCPSEhd5TQxG_IvSSh4iPyrqwrYbQoycfFdOBxZVTo-uEl-r5J8bg95kxc2PEKmSoza_2KHa7lW2HIxis5QIyhA5Igsqk7SVxkv8R0xGa605x6qi3T5kPo0q-qsNP-FZreJJO9U-VKurMNliuzxh_tUZyveGnqyeMbmGfVM96iY_t6obpNdk8VqeltqPIlUOJx_oMHPD')"></div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified</span> GI Tagged
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Spices • 500g Pack</span>
+<div class="flex items-center justify-between gap-1">
+      <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Malenadu Byadgi Chillies</h3>
+      <button data-open-3d="byadagi" class="btn-3d-view text-xs px-2 py-0.5 rounded-full font-bold flex items-center gap-0.5 shrink-0" title="Inspect 360° 3D Model">
+        <span class="material-symbols-outlined text-[13px]">3d_rotation</span> 3D
+      </button>
+    </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Lustrous natural deep red color with mild, aromatic warmth. Sun-dried in coastal Malnad.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹245</span>
+<div class="flex items-baseline gap-1">
+<span class="font-price-hero text-price-hero text-primary font-bold">₹210</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Save ₹35</span>
+</div>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md flex items-center gap-1 transition-all shadow-sm active:scale-95" onclick="triggerCartToast('Malenadu Byadgi Chillies (500g)')">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-2xl transition-all duration-300 relative overflow-hidden card-3d" data-tilt-3d>
+<div class="absolute top-3 left-3 z-10">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase shadow-sm">
+            Bestseller
+          </span>
+</div>
+<div class="absolute top-3 right-3 z-10">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Traditional glass jar of golden grainy clarified cow ghee beside green betel leaves and copper ladle in morning sunlight." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCvdZJfeNdlshUo6y8IbCfQxVjZ-cf1g89DxePNqYOoaDYnN677lS0HsssssIuYg-eox33cY808Q_bqFj9N4Vk71jB8le-nU1A4dUsb5IxJ7A6CjW8aqDA08ZBuSckZX71PQ-J-i5C6GWijD96kgjm19HrxlhHU9HEb-0STdCnsvXHZ9jd3r7vnjjiaVASgKzdFL1nYOIv3A_e1JX4AAgrN5xS-Ca7zdYshkcfJyOI7')"></div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">local_shipping</span> Bilona Style
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Dairy • 500ml Glass Jar</span>
+<div class="flex items-center justify-between gap-1">
+      <h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Saras Pure Cow Ghee</h3>
+      <button data-open-3d="coconutoil" class="btn-3d-view text-xs px-2 py-0.5 rounded-full font-bold flex items-center gap-0.5 shrink-0" title="Inspect 360° 3D Model">
+        <span class="material-symbols-outlined text-[13px]">3d_rotation</span> 3D
+      </button>
+    </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Slow-churned, rich granulated texture with unmatched sweet nutty aroma.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹350</span>
+<div class="flex items-baseline gap-1">
+<span class="font-price-hero text-price-hero text-primary font-bold">₹320</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Save ₹30</span>
+</div>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md flex items-center gap-1 transition-all shadow-sm active:scale-95" onclick="triggerCartToast('Saras Pure Cow Ghee (500ml Jar)')">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-2xl transition-all duration-300 relative overflow-hidden card-3d" data-tilt-3d>
+<div class="absolute top-3 left-3 z-10">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase shadow-sm">
+            15% OFF
+          </span>
+</div>
+<div class="absolute top-3 right-3 z-10">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Classic South Indian brass davara tumbler containing frothy steaming filter coffee placed alongside premium coffee powder box on teak surface." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDF2h92OcJRX7Q7Sw80aXqEyT6-EZjZmiCsi1awWjR4_rFOP2sP5CNkqouk0Mog5Liho4koQ0Okph-FeAMr5lpLXTh62njjuZdADj0rSUMV2GkhgUjSZA9MzTi1DbfH-ELkK5Yz6DDEXbvvVNpnNeZ-rrF0GBzyHLgYg9gkUcLDh9bKm99QpHfYU6M-kqwFwfAp2OCIWX1ztOkRTTbHpmoQrYpP0Q7nhg3ykaVaiih2')"></div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+            Chicory Blend 80:20
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Beverages • 200g Tin</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Levista Premium Coffee</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Roasted plantation Arabica and Robusta beans from the foothills of the Western Ghats.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹170</span>
+<div class="flex items-baseline gap-1">
+<span class="font-price-hero text-price-hero text-primary font-bold">₹145</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Save ₹25</span>
+</div>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md flex items-center gap-1 transition-all shadow-sm active:scale-95" onclick="triggerCartToast('Levista Premium Filter Coffee (200g)')">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-2xl transition-all duration-300 relative overflow-hidden card-3d" data-tilt-3d>
+<div class="absolute top-3 left-3 z-10">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase shadow-sm">
+            Curcumin 5.2%
+          </span>
+</div>
+<div class="absolute top-3 right-3 z-10">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Bright golden raw turmeric rhizomes next to a glass bowl of pulverized pure turmeric powder on handwoven hessian cloth." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDIL5TJLA29EQDoMzQ-E51IuJpQzR8c0LLrZ_eo7ZGgtneb6tgQOGmGtamvp_IowAiAovgKmK9PNDk6lthBGvpfdKDnDRp8TDJ5iiuTPyV5GU_5PtquEw84UfCOajEVSyegY5FcMlXbaaJ4U8ERGgQfLTzljJ7xBU124tl7XJB0o6ckyUyo-BpeHJ_yBxrd1EANf96xQJQiqRvdYGPceKlZXtk3Fwzmg6n1fdTB5BOD')"></div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">eco</span> Pesticide-Free
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Wellness • 250g Jar</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Organic Turmeric Pack</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">High-curcumin heirloom rhizomes grown under shade in Sirsi betel nut orchards.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹140</span>
+<div class="flex items-baseline gap-1">
+<span class="font-price-hero text-price-hero text-primary font-bold">₹120</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Save ₹20</span>
+</div>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md flex items-center gap-1 transition-all shadow-sm active:scale-95" onclick="triggerCartToast('Organic Turmeric &amp; Wellness Pack (250g)')">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-2xl transition-all duration-300 relative overflow-hidden card-3d" data-tilt-3d>
+<div class="absolute top-3 left-3 z-10">
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-sm text-label-sm uppercase shadow-sm">
+            18% OFF
+          </span>
+</div>
+<div class="absolute top-3 right-3 z-10">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Appetizing chocolate chip cookies stacked on ceramic plate with a glass of fresh milk on modern timber tabletop." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBjqze9gAHxxxiWd5ByxG3LTYR41uN9oF4dWpfe6rsZ6V-4MRYSvZeJm0bBsOd8tguncFKw6bmYzUNorC3sHBRLUpwVu9jKWMo65x-EKRllivvdHyf4pxXjNUxtU8GBkiUQQE7YEWjP1VuisyXB0n_PfoM35lV7QJM_ZMSiPt5Q3rLkr5MSwDdbkaG4n-eTrVeb8zZWOJLnJ4QFpG_mJHCtwQCfxYI_bgzA6zaBvAbr')"></div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+            Tea-Time Favorite
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Biscuits • 300g Box</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Unibic Choco Chip Cookies</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Crispy oven-baked cookies loaded with rich chocolate drops. Crisp family carton.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹110</span>
+<div class="flex items-baseline gap-1">
+<span class="font-price-hero text-price-hero text-primary font-bold">₹90</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Save ₹20</span>
+</div>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md flex items-center gap-1 transition-all shadow-sm active:scale-95" onclick="triggerCartToast('Unibic Choco Chip Cookies Box (300g)')">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 7 -->
+<div class="group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-2xl transition-all duration-300 relative overflow-hidden card-3d" data-tilt-3d>
+<div class="absolute top-3 left-3 z-10">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase shadow-sm">
+            Today's Santhe Pick
+          </span>
+</div>
+<div class="absolute top-3 right-3 z-10">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Rustic wicker hamper filled with freshly harvested green leafy vegetables, bottle gourd, drumsticks, and farm-fresh ginger from Sirsi countryside." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDks4YP_ATnPvfnzkLnWcuDwrvXcsnDac9wRrhU3Hja6whwAPzylN1Rm4fJKJwNz-zKWgCjyPj_wkkJN9wfnNwwOiOgHFDUPellldvG6xuKERFD8dnbwKjOjwqrhW9lIYyBVkYeKMArXC0yin_wMN-GifWXSKCB4QURtzmmGwLMXW9mxQO8YbMYE_D4bKj4tuPWj2oxmYNaQPQqHZiUFa5N-dLEqaytrw9koJx1NLi1')"></div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">water_drop</span> Harvested 5 AM
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Produce • 4.5 kg Hamper</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Local Farm Greens &amp; Veggies</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Crisp native palak, coriander, ginger root, drumsticks &amp; seasonal country gourds.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹220</span>
+<div class="flex items-baseline gap-1">
+<span class="font-price-hero text-price-hero text-primary font-bold">₹180</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Save ₹40</span>
+</div>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md flex items-center gap-1 transition-all shadow-sm active:scale-95" onclick="triggerCartToast('Fresh Local Farm Greens &amp; Veggies Basket')">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product 8 -->
+<div class="group flex flex-col rounded-2xl bg-surface-container-lowest shadow-sm hover:shadow-2xl transition-all duration-300 relative overflow-hidden card-3d" data-tilt-3d>
+<div class="absolute top-3 left-3 z-10">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm uppercase shadow-sm">
+            Multipack Value
+          </span>
+</div>
+<div class="absolute top-3 right-3 z-10">
+<button class="w-8 h-8 rounded-full bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+</button>
+</div>
+<div class="h-48 w-full bg-surface-container-low overflow-hidden relative">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="Four bars of herbal neem and tulsi bath soap wrapped in clean packaging arranged beside green Ayurvedic leaves on light soapstone." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB_W1dJsy_Or5kWtQxpUX1u8pRq4WcNNJG5uZW43KKLBR9DMus5dux7bkhxLDqGtUHZH3YI3fMAVs2ZIJLe1U1ZuzcnjLj7DvFH_Dwb5srk1FcRHcNwdC1VxzLs4Iiip5yBb3yTTTSF_VnwOo6b7KWZsjt-P5zZZ9X_7V3Cgp6P9jmBDbRDk183lERakC1C4vbPg29oOaYn5XNWub3lYEjoh75jOKBJpiXGUO4EWgz-')"></div>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm">
+            Pack of 4
+          </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-sm">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wide">Personal Care • 4 x 100g</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Godrej No.1 Herbal Soap</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Formulated with natural oils, neem, and sacred sandalwood for gentle skin cleanliness.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-price-strikethrough text-price-strikethrough text-outline line-through">₹130</span>
+<div class="flex items-baseline gap-1">
+<span class="font-price-hero text-price-hero text-primary font-bold">₹115</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Save ₹15</span>
+</div>
+</div>
+<button class="px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md flex items-center gap-1 transition-all shadow-sm active:scale-95" onclick="triggerCartToast('Godrej No.1 Herbal Soap (4 x 100g)')">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span>Add</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Why Sirsi Shops with Us (Retail Differentiators) -->
+<section class="mb-space-xl rounded-2xl bg-surface-container-low p-space-lg lg:p-space-xl">
+<div class="text-center max-w-2xl mx-auto mb-space-xl flex flex-col gap-2">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Built For Community Well-being</span>
+<h2 class="font-display-md text-display-md text-on-surface tracking-tight">Why Sirsi Shops With Us</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">We combine the honesty of fair cooperative pricing with modern, seamless retail infrastructure.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Differentiator 1 -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="w-14 h-14 rounded-xl bg-primary-fixed flex items-center justify-center text-primary mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[32px]">mode_fan</span>
+</div>
+<div class="flex items-center gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Spacious A/C Aisles</h3>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">8,000 sq.ft</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+          Wide, sanitized aisles designed for comfortable family trolleys. No narrow dead-ends or crowded corridors; climate controlled comfort throughout sultry monsoons and summers.
+        </p>
+<div class="mt-auto pt-space-sm flex items-center gap-2 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Wheelchair &amp; Senior Accessible</span>
+</div>
+</div>
+<!-- Differentiator 2 -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="w-14 h-14 rounded-xl bg-secondary-container flex items-center justify-center text-secondary mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[32px]">speed</span>
+</div>
+<div class="flex items-center gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Express Billing Counters</h3>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">8 POS Lanes</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+          Zero peak-hour queueing. High-speed barcode scanners, multiple UPI, credit, RuPay, and Kadamba co-operative deposit passbook instant billing counters.
+        </p>
+<div class="mt-auto pt-space-sm flex items-center gap-2 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Under 2-Minute Average Checkout</span>
+</div>
+</div>
+<!-- Differentiator 3 -->
+<div class="flex flex-col rounded-xl bg-surface-container-lowest p-space-lg shadow-sm hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="w-14 h-14 rounded-xl bg-tertiary-fixed flex items-center justify-center text-tertiary mb-space-md shadow-sm">
+<span class="material-symbols-outlined text-[32px]">local_shipping</span>
+</div>
+<div class="flex items-center gap-2 mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Free Town Home Delivery</h3>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">Over ₹500</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+          Order in-store, via phone, or online by 2:00 PM for prompt same-day delivery right to your gate across all Sirsi town localities and municipal wards.
+        </p>
+<div class="mt-auto pt-space-sm flex items-center gap-2 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">done_all</span>
+<span>Eco-friendly Electric Fleet</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Inside Our Store Gallery (Interactive 4-Photo Showcase) -->
+<section class="mb-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Flagship Complex Experience</span>
+<h2 class="font-display-md text-display-md text-on-surface tracking-tight">Inside Our Sirsi Store</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">
+        Take a visual tour through our pristine departments on College Road, Kasturba Nagar.
+      </p>
+</div>
+<!-- Gallery Bento Grid with Interactivity -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md">
+<!-- Photo 1: Main Aisles (Spans 7 cols) -->
+<div class="gallery-card group md:col-span-7 h-80 rounded-2xl relative overflow-hidden shadow-md cursor-pointer">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Wide perspective shot of bright, impeccably organized supermarket grocery aisles with shelves full of food provisions and overhead illuminated directional signage." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDh8BiGmV3lIEwcQkWEJ1nShDr8n3wEXcksv-8pAgSn-ocrBZB43LIo8qD6RpEVv8j7gbemzmDFg1osXPXEPgPF0X2kmuV65_Jkcz3G0y3ZGgUxlOFZJ5ivolbMY94e3IfnuYyqAigoTW1L3aSDQzAe7rS_7RXEJZ8r9bMnJsvE0c3Q-iitw_8gQEP9gohX-2nEsBrqk9b0YRRFgnuQ0noFBOrBFFebDyTQlm_oNrCh')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-space-lg flex justify-between items-end">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase tracking-wider">Aisle Department 01 • FMCG</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Spacious Main Aisles</h3>
+<p class="font-body-sm text-body-sm text-surface-container-high/90 max-w-md">Over 4,000 branded household grocery, pantry, and hygiene essentials categorized for effortless browsing.</p>
+</div>
+<span class="w-10 h-10 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-surface-container-lowest flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">zoom_in</span>
+</span>
+</div>
+</div>
+<!-- Photo 2: Produce Santhe (Spans 5 cols) -->
+<div class="gallery-card group md:col-span-5 h-80 rounded-2xl relative overflow-hidden shadow-md cursor-pointer">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Traditional market style fresh vegetable stall inside retail store with colorful baskets of fresh native cucumbers, tomatoes, greens, and root herbs." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDEUJGvFyfsnvsJyTzMUyTWB2ENLzljxx1LGBfds6bai2L7DoKfBOJ7JLrrL3ZmoDzHdQKJkDwbt_tNkyHSQ8wwHOYXAsqdU-XT3-zLBDKGrroUDuPVMQUC9WBwa_O19lhyzf68Tz45tmzFcGbkmyLn4ZI-LbKJmcGpGOSX04xhGT-5Hhh7v8urEIci443tmYMxluZ-4WKePGsNQRyhE54h2jL2GOuklOsCkOK8VKpz')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-space-lg flex justify-between items-end">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider">Department 02 • Direct Farm</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">The Produce Santhe</h3>
+<p class="font-body-sm text-body-sm text-surface-container-high/90">Daily vegetable &amp; fruit market sourced directly at sunrise from local taluk cultivators.</p>
+</div>
+<span class="w-10 h-10 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-surface-container-lowest flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">zoom_in</span>
+</span>
+</div>
+</div>
+<!-- Photo 3: Malenadu Spices (Spans 5 cols) -->
+<div class="gallery-card group md:col-span-5 h-80 rounded-2xl relative overflow-hidden shadow-md cursor-pointer">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Specialized wooden display counter showcasing artisanal jars of whole black pepper, cardamom pods, cinnamon bark, and areca nut derivative items." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBssuAo56nDWVCaDrm1e7EFuiLm6QclMyCIaJkh4un2mQcEI9S_M4g00Be3NuZ5g0ejUTLevxoygBpiVlpfaQVexXgXkbN0ICK7wadHdRw_zTSlIyK7Q8O03CmVPDzNoJk2oCPnOAo-h7nVcKaIaaLuzW48HHv9q9F6Ntf4oxCX7Iv6fw0flVHdptBMkA5QRzHd-yI6tgjsYvYjDSPp2emPPI0t93ADNg3c_ZTwQzVt')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-space-lg flex justify-between items-end">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase tracking-wider">Department 03 • Heritage</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Malenadu Spices Pavillion</h3>
+<p class="font-body-sm text-body-sm text-surface-container-high/90">Unadulterated arecanut honey, wild pepper, clove oils, and GI-certified native spices.</p>
+</div>
+<span class="w-10 h-10 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-surface-container-lowest flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">zoom_in</span>
+</span>
+</div>
+</div>
+<!-- Photo 4: Fast Checkouts (Spans 7 cols) -->
+<div class="gallery-card group md:col-span-7 h-80 rounded-2xl relative overflow-hidden shadow-md cursor-pointer">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Modern supermarket checkout counters with cashier screens, digital payment machines, and swift moving organized customer exit lanes." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBkWhZ_cwublVQLoM3LG9G2F2bRIiFcF7sczyTDyeTXEqGQgdGw2nBvSM66Ct0lOzb01pZKtjB2TJ3Es-77hZcuCG0Aa62eQYTci5i-Trp22w1Bzh-ydKc5qt-o1a3FUrqyFcDYpdFrIfsXgjlmaxD-fqdO6bwH5cA0BZrqSQvaqArwxbyWgWM-HZQI9D7hYVu1PzaAW16ncevPlFDOxN_6P-Lp_Ak4lstYNZhpDFxo')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/90 via-inverse-surface/30 to-transparent"></div>
+<div class="absolute bottom-0 left-0 right-0 p-space-lg flex justify-between items-end">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Checkout Wing • Zero Delay</span>
+<h3 class="font-headline-md text-headline-md text-surface-container-lowest">Fast Express Checkouts</h3>
+<p class="font-body-sm text-body-sm text-surface-container-high/90 max-w-md">Equipped with swift laser scanning, multi-bank UPI terminals, and cooperative member passbook discount sync.</p>
+</div>
+<span class="w-10 h-10 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-surface-container-lowest flex items-center justify-center shrink-0 group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">zoom_in</span>
+</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Party, Wedding & Bulk Grocery Order Enquiry Form -->
+<section class="rounded-3xl bg-surface-container p-space-lg lg:p-space-xl relative overflow-hidden shadow-sm">
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Column: Bulk Context & Value Props -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-primary font-label-sm text-label-sm uppercase tracking-widest">
+<span class="material-symbols-outlined text-[16px]">celebration</span>
+<span>Institutions, Weddings &amp; Events</span>
+</div>
+<h2 class="font-display-md text-display-md text-on-surface tracking-tight">Party, Wedding &amp; Bulk Grocery Orders</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Planning a wedding feast (Bhojana), temple festival, thread ceremony, or hostel bulk supply? Get direct co-operative wholesale tier pricing on rice sacks, oil tins, dal bags, and whole Malnad spices.
+        </p>
+<!-- Bullet Highlights -->
+<div class="flex flex-col gap-space-sm pt-2">
+<div class="flex items-start gap-space-sm p-space-sm rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary-container flex items-center justify-center text-secondary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">percent</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Institutional Tier Discounts</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Up to 18% additional rebate on volume orders above ₹25,000.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-fixed flex items-center justify-center text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">local_shipping</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Scheduled Hall &amp; Kitchen Drop</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Direct transport to Kalyan Mantapas anywhere in Uttara Kannada district.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">assignment_turned_in</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Quality Gurantee &amp; Seal</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Fresh, unmixed Sona Masoori, pure ghee, and unadulterated spice assurance.</span>
+</div>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-primary/10 flex items-center gap-space-md mt-2">
+<span class="material-symbols-outlined text-primary text-[28px]">support_agent</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-primary font-bold">Direct Wholesale Desk</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">08384 - 222335</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Enquiry Form -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-2xl p-space-lg lg:p-space-xl shadow-md">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-1">Send Bulk Procurement Request</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-lg">Our retail managers will examine your requirement and respond with an official wholesale rate card within 3 hours.</p>
+<form class="flex flex-col gap-space-md" id="bulk-enquiry-form" onsubmit="handleBulkSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Full Name -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="bulk-name">Full Name / Organizer Name *</label>
+<div class="flex items-center px-space-md py-2.5 rounded-lg bg-surface-container-low focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px_#f36b35] transition-all">
+<span class="material-symbols-outlined text-outline text-[18px] mr-2">person</span>
+<input class="w-full bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none placeholder:text-outline" id="bulk-name" placeholder="e.g. Mahabaleshwar Hegde" required="" type="text"/>
+</div>
+</div>
+<!-- Mobile Number -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="bulk-phone">Mobile Number *</label>
+<div class="flex items-center px-space-md py-2.5 rounded-lg bg-surface-container-low focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px_#f36b35] transition-all">
+<span class="material-symbols-outlined text-outline text-[18px] mr-2">call</span>
+<input class="w-full bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none placeholder:text-outline" id="bulk-phone" pattern="[0-9]{10}" placeholder="10-digit phone number" required="" type="tel"/>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Delivery Date -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="bulk-date">Required Delivery / Event Date *</label>
+<div class="flex items-center px-space-md py-2.5 rounded-lg bg-surface-container-low focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px_#f36b35] transition-all">
+<span class="material-symbols-outlined text-outline text-[18px] mr-2">event</span>
+<input class="w-full bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none" id="bulk-date" required="" type="date"/>
+</div>
+</div>
+<!-- Occasion / Type -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="bulk-occasion">Event Occasion Type</label>
+<div class="flex items-center px-space-md py-2.5 rounded-lg bg-surface-container-low focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px_#f36b35] transition-all">
+<span class="material-symbols-outlined text-outline text-[18px] mr-2">festival</span>
+<select class="w-full bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none" id="bulk-occasion">
+<option value="wedding">Wedding (Maduve Bhojana)</option>
+<option value="engagement">Engagement / Upanayana</option>
+<option value="temple">Temple Utsava / Community Feast</option>
+<option value="institution">Hostel / School Monthly Ration</option>
+<option value="other">Other Bulk Requirement</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Items & Quantities -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-center">
+<label class="font-label-md text-label-md text-on-surface" for="bulk-items">Grocery Items &amp; Bulk Quantities *</label>
+<span class="font-label-sm text-label-sm text-outline">e.g. Sona Masoori 5 quintals, Ghee 30L</span>
+</div>
+<textarea class="w-full p-space-md rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:bg-surface-container-lowest focus:outline-none focus:shadow-[0_0_0_2px_#f36b35] placeholder:text-outline transition-all" id="bulk-items" placeholder="List items such as: Rice bags (kg), Sunpure Oil tins, Toor Dal sacks, Malnad jaggery blocks, dry spices, tea/coffee packs, etc." required="" rows="4"></textarea>
+</div>
+<!-- Delivery Location / Hall -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface" for="bulk-destination">Delivery Hall / Destination Address in Sirsi &amp; Vicinity</label>
+<div class="flex items-center px-space-md py-2.5 rounded-lg bg-surface-container-low focus-within:bg-surface-container-lowest focus-within:shadow-[0_0_0_2px_#f36b35] transition-all">
+<span class="material-symbols-outlined text-outline text-[18px] mr-2">pin_drop</span>
+<input class="w-full bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none placeholder:text-outline" id="bulk-destination" placeholder="e.g. Shankara Kalyana Mantapa, Hubli Road, Sirsi" type="text"/>
+</div>
+</div>
+<!-- Submit Button -->
+<button class="mt-2 w-full py-3.5 rounded-xl bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg transition-all shadow-md flex items-center justify-center gap-2 active:scale-[0.99]" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Submit Wholesale Enquiry</span>
+</button>
+</form>
+<!-- Form Success State (hidden by default) -->
+<div class="hidden mt-space-md p-space-md rounded-xl bg-secondary-container text-on-secondary-container flex items-start gap-space-sm" id="bulk-success-message">
+<span class="material-symbols-outlined text-[24px] mt-0.5">check_circle</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg font-bold">Bulk Request Registered Successfully!</span>
+<span class="font-body-sm text-body-sm">Thank you. Our Sirsi Wholesale Officer will call back on your mobile number within 3 hours with discounted invoice rates.</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Toast Notification Container -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="cart-toast">
+<div class="bg-inverse-surface text-inverse-on-surface px-space-lg py-3 rounded-xl shadow-2xl flex items-center gap-space-sm border border-outline-variant/30">
+<span class="material-symbols-outlined text-secondary-fixed text-[24px]">shopping_bag</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-surface-container-highest">Basket Updated</span>
+<span class="font-label-md text-label-md" id="cart-toast-text">Item added</span>
+</div>
+</div>
+</div>
+<!-- Client-side Interactive Script -->
+<script>
+    // Category Tabs Switching Logic
+    const categoryButtons = document.querySelectorAll('.cat-pill');
+    categoryButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryButtons.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary', 'active');
+          b.classList.add('bg-surface-container-lowest/90', 'text-on-surface');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary', 'active');
+        btn.classList.remove('bg-surface-container-lowest/90', 'text-on-surface');
+        
+        // Quick visual feedback on grid
+        const grid = document.getElementById('product-grid');
+        if (grid) {
+          grid.style.opacity = '0.4';
+          setTimeout(() => {
+            grid.style.opacity = '1';
+          }, 150);
+        }
+      });
+    });
+
+    // Search input filter feedback
+    const searchInput = document.getElementById('product-search-input');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        const cards = document.querySelectorAll('#product-grid > div');
+        cards.forEach(card => {
+          const text = card.innerText.toLowerCase();
+          if (text.includes(query)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    }
+
+    // View All button scroll/reset
+    const viewAllBtn = document.getElementById('view-all-btn');
+    if (viewAllBtn) {
+      viewAllBtn.addEventListener('click', () => {
+        if (searchInput) {
+          searchInput.value = '';
+          const cards = document.querySelectorAll('#product-grid > div');
+          cards.forEach(c => c.style.display = 'flex');
+          searchInput.focus();
+        }
+      });
+    }
+
+    // Cart Toast Notification
+    function triggerCartToast(itemName) {
+      const toast = document.getElementById('cart-toast');
+      const toastText = document.getElementById('cart-toast-text');
+      if (toast && toastText) {
+        toastText.innerText = itemName + ' added to basket';
+        toast.classList.remove('translate-y-24', 'opacity-0', 'pointer-events-none');
+        toast.classList.add('translate-y-0', 'opacity-100');
+        
+        setTimeout(() => {
+          toast.classList.add('translate-y-24', 'opacity-0', 'pointer-events-none');
+          toast.classList.remove('translate-y-0', 'opacity-100');
+        }, 2800);
+      }
+    }
+
+    // Bulk Order Submission Handler
+    function handleBulkSubmit(e) {
+      e.preventDefault();
+      const form = document.getElementById('bulk-enquiry-form');
+      const successMsg = document.getElementById('bulk-success-message');
+      if (form && successMsg) {
+        form.reset();
+        successMsg.classList.remove('hidden');
+        setTimeout(() => {
+          successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 100);
+      }
+    }
+
+    // Gallery Modal Preview / Lightbox placeholder handler
+    const galleryCards = document.querySelectorAll('.gallery-card');
+    galleryCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const title = card.querySelector('h3') ? card.querySelector('h3').innerText : 'Department';
+        triggerCartToast('Viewing ' + title + ' Section');
+      });
+    });
+  </script>
+</div></div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1360px] mx-auto px-margin-desktop pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-xl pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[24px]">storefront</span></div><span class="font-headline-md text-headline-md text-primary tracking-tight">KADAMBA GROUP</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Pioneering agricultural cooperative retail, pure Malenadu spices, cold-pressed oils, and comprehensive community financial services rooted in Sirsi, Uttara Kannada since inception.</p><div class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface"><div class="flex items-start gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">location_on</span><span>Flagship Complex, College Road, Kasturba Nagar, Sirsi – 581401, Karnataka</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">call</span><span>Retail Helpline: 08384 - 222333 / 222334</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[18px]">mail</span><span>customercare@kadambagroup.coop</span></div></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-bold">Enterprise Verticals</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary"><a data-path="supermart" href="supermart.html">Supermart Catalog</a></li><li class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary"><a data-path="financial-services" href="financial-services.html">Co-operative Credit Bank</a></li><li class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary"><a data-path="financial-services" href="financial-services.html">Farmer Dividend Schemes</a></li><li class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary"><a data-path="suppliers" href="suppliers.html">FMCG Brand Partners</a></li><li class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary"><a data-path="stores" href="stores.html">Sirsi Flagship &amp; Hubs</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-bold">Quick Links</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm"><li class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary"><a data-path="home" href="index.html">Home Overview</a></li><li class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary"><a data-path="about-us" href="about-us.html">Heritage &amp; Board</a></li><li class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary"><a data-path="stores" href="stores.html">Store Locations</a></li><li class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary"><a data-path="privacy-policy" href="privacy-policy.html">Privacy Policy</a></li><li class="flex items-center gap-space-xs text-on-surface-variant hover:text-primary"><a data-path="suppliers" href="suppliers.html">Suppliers Portal</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-label-lg text-label-lg text-on-surface font-bold">Weekly Santhe Bulletin</span><p class="font-body-sm text-body-sm text-on-surface-variant">Get seasonal Malnad harvests, spice arrivals, and special member dividend announcements directly.</p><form class="flex flex-col gap-space-xs"><input class="px-space-md py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm shadow-[0_2px_8px_-2px_rgba(73,56,44,0.08)] focus:outline-none focus:ring-2 focus:ring-primary-container placeholder:text-on-surface-variant/70" placeholder="Enter your email address" type="email"/><button class="px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center justify-center gap-space-xs shadow-sm" type="submit"><span class="material-symbols-outlined text-[16px]">send</span><span>Subscribe</span></button></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-label-sm text-label-sm text-on-surface-variant"><div class="flex flex-col sm:flex-row items-center gap-space-xs text-center sm:text-left"><span>Co-operative Reg No: KBL/RCS/044/1998</span><span class="hidden sm:inline">•</span><span>APMC Market Yard Lic: SIR-784</span><span class="hidden sm:inline">•</span><span>FSSAI Lic: 11221334000412</span></div><div class="text-center md:text-right">© 2025 Kadamba Group Retail Enterprise. All Rights Reserved.</div></div></div></footer>
+<!-- Kadamba Universal Routing Script -->
+<script>
+  (function() {
+    const routeMap = {
+      'home': 'index.html',
+      'supermart': 'supermart.html',
+      'financial-services': 'financial-services.html',
+      'suppliers': 'suppliers.html',
+      'stores': 'stores.html',
+      'about-us': 'about-us.html',
+      'privacy-policy': 'privacy-policy.html'
+    };
+
+    document.addEventListener('click', function(e) {
+      const link = e.target.closest('[data-path]');
+      if (!link) return;
+      const pathAttr = link.getAttribute('data-path');
+      if (pathAttr && routeMap[pathAttr]) {
+        e.preventDefault();
+        window.location.href = routeMap[pathAttr];
+      }
+    });
+  })();
+</script>
+
+</body></html>
